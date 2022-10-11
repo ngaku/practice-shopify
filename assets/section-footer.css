@@ -428,6 +428,9 @@ noscript .localization-selector.link {
     text-decoration: underline;
     text-underline-offset: 0.3rem;
   }
+  .footer-block_details-content  .list-menu_item--link{
+    font-family: YuGothic,'Yu Gothic',sans-serif;
+  }
 
   .footer-block__details-content .list-menu__item--active:hover {
     text-decoration-thickness: 0.2rem;
