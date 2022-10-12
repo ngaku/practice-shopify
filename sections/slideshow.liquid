@@ -37,8 +37,63 @@
           <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
           <span class="slider-counter--total">{{ section.blocks.size }}</span>
         {%- else-%}
-        <h1>スライダー</h1>
-{% schema %}
+        <h1>スライダー</h1
+<div class="swiper-container slideshow--small">
+   <div class="swiper-wrapper">
+     <div class="swiper-slide">
+		<div class="slide-overlay">
+		</div>
+            <img src="https://picsum.photos/500/300">
+            <div class="slide-content center">
+                <h2 class="mega-title--large">Slide Title 1</h2>
+                <p class="mega-desc--large">Lorem ipsum dolor sit amet, 
+  consectetur</p>
+           <a href="#" class="btn slideshow__btn">ボタンのラベル</a>
+            </div>
+     </div>
+     <div class="swiper-slide">
+                <div class="slide-overlay">
+                </div>
+           <img src="https://picsum.photos/500/301">
+            <div class="slide-content center">
+                <h2 class="mega-title--large">Slide Title 2</h2>
+                <p class="mega-desc--large">Lorem ipsum dolor sit amet, +consectetur</p>
+                <a href="#" class="btn slideshow__btn">ボタンのラベル+ </a>
+            </div>
+     </div>
+     <div class="swiper-slide">
+                <div class="slide-overlay">
+                </div>
+            <img src="https://picsum.photos/500/302">
+            <div class="slide-content center">
+                <h2 class="mega-title--large">Slide Title 3</h2>
+              <p class="mega-desc--large">Lorem ipsum dolor sit amet, +consectetur</p>
+           <a href="#" class="btn slideshow__btn">ボタンのラベル</a>
+            </div>
+     </div>
+   </div>
+ </div>
+ <script type="text/javascript">  
+  const swiper = new Swiper('.swiper-container', {
+    // 自動再生（true:自動再生する、false:自動再生しない）
+     autoplay: {
+         delay: 9000,
+     },
+    // スライド方向（水平方向）
+    direction: 'horizontal',
+    // エフェクト（true:フェードアニメーション、false:スライドアニメーション）
+    effect: 'fade',
+    // ループ
+    loop: true,
+    // 表示枚数
+    slidesPerView: 1,
+    // ページネーション（true:表示、false:非表示）
+    pagination: false,
+    // ページ送りボタン（true:表示、false:非表示）
+    navigation: false
+  });
+ </script>
+ {% schema %}
     {
         "name": "スライダーsample",
         "class": "slide-wrap",
