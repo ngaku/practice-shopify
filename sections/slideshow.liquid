@@ -267,9 +267,18 @@
     }
   }
  </style>
-
+{%- if section.settings.slide_height == 'adapt' -%}
+  {%- assign first_block = section.blocks[0] -%}
+  {%- if first_block.settings.image.aspect_ratio == blank -%}
+    {%- assign min_aspect_ratio = 2.0 -%}
+  {%- else -%}
+    {%- assign min_aspect_ratio = first_block.settings.image.aspect_ratio -%}
+  {%- endif -%}
+  {% assign wrapper_height = 100 | divided_by: min_aspect_ratio %}
+{%- endif -%} 
         <h1>スライダー</h1>
-<div class="swiper-container slideshow--{{ section.settings.slide_height }}">
+<div class="swiper-container slideshow--{{ section.settings.slide_height }}" {% if section.settings.slide_height == 'adapt' %} data-min-aspect-ratio="{{ min_aspect_ratio }}"
+   style="height: {{- wrapper_height -}}vw"{% endif %} id="sliderContainer">
    <div class="swiper-wrapper">
     {%- for block in section.blocks -%}
      <div class="swiper-slide">
@@ -937,6 +946,15 @@
           "type": "header",
           "content": "t:sections.slideshow.settings.mobile.content"
         },
+	var sliderContainer = document.getElementById('sliderContainer');
+    var minAspectRatio = sliderContainer.getAttribute('data-min-aspect-ratio');
+    function sliderChangeHeight(){
+        sliderContainer.style.height = 
+        document.documentElement.offsetWidth / minAspectRatio + 'px';
+    }
+    window.onresize = function(){
+        sliderChangeHeight();
+    }
         {
           "type": "select",
           "id": "text_alignment_mobile",
