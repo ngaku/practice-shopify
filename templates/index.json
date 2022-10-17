@@ -225,6 +225,7 @@
         "ab127dce-80be-48cd-9a18-c8d441ccdbfd": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/man-hiking-in-mountains.jpg",
             "slide_title": "見出しが入ります。",
             "subheading": "あなたのブランドのストーリーをビデオや画像で伝える",
             "button_label": "Button label",
