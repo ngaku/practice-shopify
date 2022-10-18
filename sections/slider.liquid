@@ -1,4 +1,75 @@
 <style>
+.stopbtn {
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    transform: translateX(50%);
+    right: calc(50% - 220px / 2);
+    width: 44px;
+    height: 44px;
+    margin: 0px;
+    background-color: rgba(0,0,0,.4);
+    z-index: 1;
+}
+
+.stopbtn.stop {
+    display: inline-block;
+}
+.stopbtn.stop:before, .stopbtn.stop:after {
+    position: absolute;
+    top: 15px;
+    content: '';
+    width: 3px;
+    height: 15px;
+    background-color: #FFF;
+}
+.stopbtn.stop:before {
+    left: 55%;
+  }
+  .stopbtn.stop:after {
+    left: 35%;
+  }
+
+.stopbtn.start {
+  display: inline-block;
+}
+.stopbtn.start:before {
+    position: absolute;
+    top: 15px;
+    right: 13px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 0 7px 14px;
+    border-color: transparent transparent transparent #FFF;
+  }
+  .stopbtn.start:after {
+    display: none;
+  }
+  @media only screen and (max-width: 750px) {
+    .slider-other-menu{
+        height: 30px;
+    }
+    .swiper-pagination{
+        top: -2px;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        bottom: -17px;
+    }
+    .stopbtn {
+        right: calc(50% - 195px / 2);
+        width: 30px;
+        height: 30px;
+    }
+    .stopbtn.stop:before, .stopbtn.stop:after{
+        top: 8px;
+    }
+    .stopbtn.start:before {
+        top: 9px;
+        right: 8px;
+    }
+  }
 /*ナビゲーションのカスタマイズ*/
 	.slider-other-menu{
 	    position: absolute;
@@ -156,10 +227,18 @@
     }
  }
  </style>
+{%- if section.settings.slide_height == 'adapt' -%}
+  {%- assign first_block = section.blocks[0] -%}
+  {%- if first_block.settings.image.aspect_ratio == blank -%}
+    {%- assign min_aspect_ratio = 2.0 -%}
+  {%- else -%}
+    {%- assign min_aspect_ratio = first_block.settings.image.aspect_ratio -%}
+  {%- endif -%}
+  {% assign wrapper_height = 100 | divided_by: min_aspect_ratio %}
 
 
-
-<div class="swiper-container slideshow--{{ section.settings.slide_height }}">
+<div class="swiper-container slideshow--{{ section.settings.slide_height }}" {% if section.settings.slide_height == 'adapt' %} data-min-aspect-ratio="{{ min_aspect_ratio }}"
+   style="height: {{- wrapper_height -}}vw"{% endif %} id="sliderContainer">
    <div class="swiper-wrapper">
    <div class="slider-other-menu">
 	<!-- 前ページボタン -->
