@@ -120,6 +120,13 @@
 
 <div class="swiper-container slideshow--{{ section.settings.slide_height }}">
    <div class="swiper-wrapper">
+   <div class="slider-other-menu">
+	<!-- 前ページボタン -->
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-pagination"></div>
+	<!-- 次ページボタン -->
+	<div class="swiper-button-next"></div>
+ </div>
     {%- for block in section.blocks -%}
 
       <div class="swiper-slide">
@@ -136,6 +143,7 @@
            {%- if block.settings.button_label != blank and block.settings.button_link != + blank -%}
 	   <a href="{{ block.settings.button_link }}" class="slideshow__btn">{{ block.settings.button_label | escape }}</a>
             {%- endif -%}
+	    
 	    </div>
 	</div>
 	
