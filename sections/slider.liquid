@@ -1,4 +1,45 @@
 <style>
+/*ナビゲーションのカスタマイズ*/
+	.slider-other-menu{
+	    position: absolute;
+	    bottom: 10px;
+	    transform: translateX(50%);
+	    right: 50%;
+	    left: auto;
+	    width: 151px;
+	    height: 44px;
+	    background-color: rgba(0,0,0,.4);
+	    color: rgba(255,255,255,.5);
+	    z-index: 1;
+	}
+	.swiper-pagination-clickable .swiper-pagination-bullet{
+	    margin: -4px 10px;
+	}
+	.swiper-pagination {
+	    top: 4px;
+	    left: 32px;
+	}
+	.swiper-pagination-bullet-active{
+	    background: #fff;
+	}
+	.swiper-pagination-bullet{
+	    background: rgb(255,255,255);
+	}
+	.swiper-button-prev, .swiper-button-next{
+	    display: block !important; 
+	    bottom: -10px;
+	    top: auto;
+	    color: rgba(255,255,255,.5);
+	}
+	.swiper-button-next:after, .swiper-button-prev:after{
+	    font-size:15px;
+	}
+	.swiper-button-prev{
+	    left: calc(50% - 125px / 2);
+	}
+	.swiper-button-next{
+	    right: calc(50% - 155px / 2);
+	}
 .swiper-container{
     max-height: 100vh;
     transition: height .6s cubic-bezier(.44, .13, .48, .87);
@@ -127,6 +168,9 @@
 	<!-- 次ページボタン -->
 	<div class="swiper-button-next"></div>
  </div>
+   {% if section.settings.auto == true %}
+        <p class="stopbtn stop" id="playBtn"></p>
+    {% endf %}
     {%- for block in section.blocks -%}
 
       <div class="swiper-slide">
@@ -163,10 +207,17 @@
     loop: true,
     // 表示枚数
     slidesPerView: 1,
-    // ページネーション（true:表示、false:非表示）
-    pagination: false,
+       // ページネーション（true:表示、false:非表示）
+   pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
     // ページ送りボタン（true:表示、false:非表示）
-    navigation: false
+   navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+   }
   });
  </script>
 {% schema %}
