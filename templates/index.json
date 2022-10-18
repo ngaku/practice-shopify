@@ -65,9 +65,9 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/man-hiking-in-mountains.jpg",
-            "slide_title": "見出しが入ります。",
-            "subheading": "あなたのブランドのストーリーをビデオや画像で伝える",
-            "button_label": "Button label",
+            "slide_title": "",
+            "subheading": "",
+            "button_label": "",
             "button_link": ""
           }
         },
@@ -75,9 +75,9 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/coffee-and-cake.jpg",
-            "slide_title": "見出しが入ります。",
-            "subheading": "あなたのブランドのストーリーをビデオや画像で伝える",
-            "button_label": "Button label",
+            "slide_title": "",
+            "subheading": "",
+            "button_label": "",
             "button_link": ""
           }
         },
