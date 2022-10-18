@@ -124,7 +124,7 @@
         "slide_height": "small",
         "text_size": "medium",
         "text_alignment": "left center",
-        "show_overlay": true,
+        "show_overlay": false,
         "auto": true,
         "speed": 3
       }
