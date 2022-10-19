@@ -1,97 +1,5 @@
 {
   "sections": {
-    "64484cbd-4b9c-4ae5-ac3b-5128f35241f8": {
-      "type": "slider",
-      "blocks": {
-        "a2419908-23ed-4983-be4b-90dcfe8316bd": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/sliced-pumpkin-pie.jpg",
-            "slide_title": "",
-            "subheading": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "ab127dce-80be-48cd-9a18-c8d441ccdbfd": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/man-hiking-in-mountains.jpg",
-            "slide_title": "",
-            "subheading": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "57597ba8-c359-4086-911b-014d5ef77bb7": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/coffee-and-cake.jpg",
-            "slide_title": "",
-            "subheading": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "d2b8810e-74bc-4ec9-b2f7-67883854a71e": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/orange-poles-create-a-tunnel.jpg",
-            "slide_title": "",
-            "subheading": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "6db1f31c-e0b8-4fb9-8f75-18253c867161": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/breakfast-from-above.jpg",
-            "slide_title": "",
-            "subheading": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "01e56ded-45cf-4eb7-b0bb-fba164c4f706": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/preparing-for-travel.jpg",
-            "slide_title": "",
-            "subheading": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "f75a906b-3340-4d1e-9a0b-071d10ce6002": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/green-plants-grow-in-lines-on-rolling-hills.jpg",
-            "slide_title": "見出しが入ります。",
-            "subheading": "あなたのブランドのストーリーをビデオや画像で伝える",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "a2419908-23ed-4983-be4b-90dcfe8316bd",
-        "ab127dce-80be-48cd-9a18-c8d441ccdbfd",
-        "57597ba8-c359-4086-911b-014d5ef77bb7",
-        "d2b8810e-74bc-4ec9-b2f7-67883854a71e",
-        "6db1f31c-e0b8-4fb9-8f75-18253c867161",
-        "01e56ded-45cf-4eb7-b0bb-fba164c4f706",
-        "f75a906b-3340-4d1e-9a0b-071d10ce6002"
-      ],
-      "settings": {
-        "slide_height": "small",
-        "text_size": "large",
-        "text_alignment": "center center",
-        "show_overlay": true,
-        "auto": true,
-        "speed": 3
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -301,15 +209,107 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "64484cbd-4b9c-4ae5-ac3b-5128f35241f8": {
+      "type": "slider",
+      "blocks": {
+        "a2419908-23ed-4983-be4b-90dcfe8316bd": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sliced-pumpkin-pie.jpg",
+            "slide_title": "",
+            "subheading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "ab127dce-80be-48cd-9a18-c8d441ccdbfd": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/man-hiking-in-mountains.jpg",
+            "slide_title": "",
+            "subheading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "57597ba8-c359-4086-911b-014d5ef77bb7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/coffee-and-cake.jpg",
+            "slide_title": "",
+            "subheading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "d2b8810e-74bc-4ec9-b2f7-67883854a71e": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/orange-poles-create-a-tunnel.jpg",
+            "slide_title": "",
+            "subheading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "6db1f31c-e0b8-4fb9-8f75-18253c867161": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/breakfast-from-above.jpg",
+            "slide_title": "",
+            "subheading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "01e56ded-45cf-4eb7-b0bb-fba164c4f706": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/preparing-for-travel.jpg",
+            "slide_title": "",
+            "subheading": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "f75a906b-3340-4d1e-9a0b-071d10ce6002": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/green-plants-grow-in-lines-on-rolling-hills.jpg",
+            "slide_title": "見出しが入ります。",
+            "subheading": "あなたのブランドのストーリーをビデオや画像で伝える",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "a2419908-23ed-4983-be4b-90dcfe8316bd",
+        "ab127dce-80be-48cd-9a18-c8d441ccdbfd",
+        "57597ba8-c359-4086-911b-014d5ef77bb7",
+        "d2b8810e-74bc-4ec9-b2f7-67883854a71e",
+        "6db1f31c-e0b8-4fb9-8f75-18253c867161",
+        "01e56ded-45cf-4eb7-b0bb-fba164c4f706",
+        "f75a906b-3340-4d1e-9a0b-071d10ce6002"
+      ],
+      "settings": {
+        "slide_height": "small",
+        "text_size": "large",
+        "text_alignment": "center center",
+        "show_overlay": true,
+        "auto": true,
+        "speed": 3
+      }
     }
   },
   "order": [
-    "64484cbd-4b9c-4ae5-ac3b-5128f35241f8",
     "image_banner",
     "rich_text",
     "featured_collection",
     "collage",
     "video",
-    "multicolumn"
+    "multicolumn",
+    "64484cbd-4b9c-4ae5-ac3b-5128f35241f8"
   ]
 }
