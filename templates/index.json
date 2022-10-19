@@ -62,6 +62,16 @@
             "button_label": "",
             "button_link": ""
           }
+        },
+        "f75a906b-3340-4d1e-9a0b-071d10ce6002": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/green-plants-grow-in-lines-on-rolling-hills.jpg",
+            "slide_title": "見出しが入ります。",
+            "subheading": "あなたのブランドのストーリーをビデオや画像で伝える",
+            "button_label": "Button label",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
@@ -70,14 +80,15 @@
         "57597ba8-c359-4086-911b-014d5ef77bb7",
         "d2b8810e-74bc-4ec9-b2f7-67883854a71e",
         "6db1f31c-e0b8-4fb9-8f75-18253c867161",
-        "01e56ded-45cf-4eb7-b0bb-fba164c4f706"
+        "01e56ded-45cf-4eb7-b0bb-fba164c4f706",
+        "f75a906b-3340-4d1e-9a0b-071d10ce6002"
       ],
       "settings": {
-        "slide_height": "large",
+        "slide_height": "small",
         "text_size": "large",
         "text_alignment": "center center",
         "show_overlay": true,
-        "auto": false,
+        "auto": true,
         "speed": 3
       }
     },
